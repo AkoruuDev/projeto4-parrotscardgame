@@ -1,0 +1,10 @@
+:root { /*  main  */
+    --background: #dcffd3;
+    --card: #A7E9AF;
+    --card-border: #99CEA8;
+    --title: #75B79E;
+}
+
+:root { /*  bonus PL    */
+    --footer: #75B79E;
+}
