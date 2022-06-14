@@ -1,0 +1,12 @@
+- [ ]  Coloque um relógio no topo superior direito da tela, contando quantos segundos já passaram desde o início do jogo. Ao final, informe na mensagem de vitória a quantidade de segundos.
+- [ ]  Ao final do jogo, pergunte com um **prompt** se o usuário gostaria de reiniciar a partida. Se ele responder sim, comece novamente o jogo perguntando a quantidade de cartas.
+    - Para correção automática
+        
+        O prompt deve receber as strings “sim” e “não”, com todas as letras minúsculas e acentuação correta.
+
+
+# Bonus Pessoal (PL)
+- [ ] Melhore o layout mantendo a funcionalidade do projeto
+    - Lembre-se de abrir a segunda parte do projeto em um repositório secundário
+    
+    Transcreva os prompts para uma tela com layout mais amigável
