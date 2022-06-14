@@ -1,0 +1,43 @@
+Proposta feita por
+    Driven
+Numero do projeto
+    4
+Wakatime
+    projeto4-parrotscardgame
+
+GitHub
+    Repositório
+        https://github.com/AkoruuDev/projeto4-parrotscardgame
+    Deploy
+        https://akoruudev.github.io/projeto4-parrotscardgame/
+
+Desenvolvedor
+    Akoruu Dev
+    https://github.com/akoruudev/
+    https://linkedin.com/in/akoruudev/
+
+Database
+    Projeto
+        Data de Inicio
+            14-06-2022
+        Data de finalização
+            --/--/----
+        Data de entrega
+            20-06-2022
+        Produção
+            00:00:00:00
+    bonus
+        ----
+    bonus PL
+        ----
+
+Tecnologias
+    HTML 5
+    CSS 3
+    JavaScript
+
+Integrações
+    fonts
+
+    Ion-icons
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
