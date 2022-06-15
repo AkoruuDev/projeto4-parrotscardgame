@@ -8,3 +8,9 @@
 :root { /*  bonus PL    */
     --footer: #75B79E;
 }
+
+:root {
+    --largura: 351px;
+    --altura: var(--largura)*1.25px;
+    --teste: 10;
+}
