@@ -1,19 +1,15 @@
-/*
-function escolhaDaQtdDeCartas() {
+let stop = 'continua';
+
+while (stop != 'Stop') {
     let qtdCartas = prompt("Com quantas cartas quer jogar? (de 4 à 14)");
 
-    if (qtdCartas in Range(4, 6, 8, 10, 12, 14)) {
-        escolhaDaQtdDeCartas();    
-    }else{
-        escolhaDaQtdDeCartas();
+    if (qtdCartas != 4 && qtdCartas != 6 && qtdCartas != 8 && qtdCartas != 10 && qtdCartas != 12 && qtdCartas != 14) {
+        stop = 'continua';
+    } else {
+        stop = 'Stop';
     }
 }
 
-escolhaDaQtdDeCartas()
-*/
-
-
-let qtdCartas = Number(prompt("Com quantas cartas quer jogar?"));
 let contador = 0;
 let cartas = [];
 
