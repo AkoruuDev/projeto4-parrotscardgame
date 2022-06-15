@@ -1,7 +1,7 @@
 let stop = 'continua';
-
+let qtdCartas;
 while (stop != 'Stop') {
-    let qtdCartas = prompt("Com quantas cartas quer jogar? (de 4 à 14)");
+    qtdCartas = prompt("Com quantas cartas quer jogar? (de 4 à 14)");
 
     if (qtdCartas != 4 && qtdCartas != 6 && qtdCartas != 8 && qtdCartas != 10 && qtdCartas != 12 && qtdCartas != 14) {
         stop = 'continua';
