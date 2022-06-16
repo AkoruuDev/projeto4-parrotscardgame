@@ -10,6 +10,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--background);
+
+    position: relative;
 }
 
 .main-container {
@@ -27,7 +29,7 @@ body {
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -37,11 +39,17 @@ body {
     color: var(--title);
 }
 
-.frente{
-    max-width: 351px;
-    max-height: 438px;
-    min-width: 117px;
-    min-height: 146px;
+.card {
+    display: flex;
+    justify-content: center;
+
+    transform-style: preserve-3d;
+    transition: all 0.8s;
+}
+
+.face{
+    width: 117px;
+    height: 146px;
     padding: 12px;
     margin: 25px;
 
@@ -52,6 +60,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.back {
+    backface-visibility: hidden;
+}
+
+.flip {
+    transform: rotateY(180deg);
 }
 
 img {

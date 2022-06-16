@@ -12,14 +12,18 @@ while (stop != 'Stop') {
 
 for (let index = 0; index < qtdCartas; index++) {
     const cartas = `
-        <div class="card" data-identifier="card">
-            <div class="frente" data-identifier="front-face">
+        <div class="card" onclick="flip(this)" data-identifier="card">
+            <div class="face front" data-identifier="front-face">
                 <img src="./images/front.png" class="parrot">
             </div>
-            <div class="tras" data-identifier="back-face">
-
+            <div class="face back" data-identifier="back-face">
+                <img src="./images/metalparrot.gif">
             </div>
         </div>
     `;
     document.querySelector(".container").innerHTML += cartas;
+}
+
+function flip(elemento) {
+    elemento.classList.toggle("flip");
 }
