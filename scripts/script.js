@@ -10,28 +10,16 @@ while (stop != 'Stop') {
     }
 }
 
-let contador = 0;
-let cartas = [];
-
-while (contador < qtdCartas) {
-    cartas.push(`
-            <div class="card" data-identifier="card">
-                <div class="frente" data-identifier="front-face">
-                    <img src="./images/front.png" class="parrot">
-                </div>
-                <div class="tras" data-identifier="back-face">
-
-                </div>
+for (let index = 0; index < qtdCartas; index++) {
+    const cartas = `
+        <div class="card" data-identifier="card">
+            <div class="frente" data-identifier="front-face">
+                <img src="./images/front.png" class="parrot">
             </div>
-    `)
+            <div class="tras" data-identifier="back-face">
 
-    colocarNaTela()
-
-    contador = contador + 1;
-}
-
-
-function colocarNaTela() {
-    const parrot = document.querySelector(".container");
-    parrot.innerHTML = cartas;
+            </div>
+        </div>
+    `;
+    document.querySelector(".container").innerHTML += cartas;
 }
