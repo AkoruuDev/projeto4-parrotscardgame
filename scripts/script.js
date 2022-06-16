@@ -17,7 +17,7 @@ while (contador < qtdCartas) {
     cartas.push(`
             <div class="card" data-identifier="card">
                 <div class="frente" data-identifier="front-face">
-                    <img src="/images/front.png" class="parrot">
+                    <img src="./images/front.png" class="parrot">
                 </div>
                 <div class="tras" data-identifier="back-face">
 
