@@ -51,13 +51,21 @@ for (let index = 0; index < qtdCartas; index++) {
 }
 
 function flip(elemento) {
-    elemento.classList.toggle("flip");
+    elemento.classList.add("flip");
 
     contarTentativas();
+    conferirJogo();
 }
 
-let tentaas = 0;
+let tentativas = 0;
 
 function contarTentativas() {
     tentativas = tentativas + 1;
+}
+
+function conferirJogo() {
+    const cartasNaMesa = document.querySelectorAll(".flip").length;
+    if (cartasNaMesa == qtdCartas) {
+        alert(`Parabéns! Você finalizou o jogo com ${tentativas} tentativas!`);
+    }
 }
