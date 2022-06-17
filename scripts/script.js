@@ -53,13 +53,13 @@ for (let index = 0; index < qtdCartas; index++) {
 function flip(elemento) {
     elemento.classList.add("flip");
 
-    let cardVirado = document.querySelectorAll(".par").length;
+    let cardVirado = document.querySelectorAll(".virada").length;
     let cardflipado = document.querySelector(".flip");
-    if (cardVirado == 0) {
+    if (cardVirado != 0) {
         if (cardVirado != elemento) {
             cardflipado.classList.remove(".flip");
         } else {
-            elemento.classList.add("par");
+            elemento.classList.add("virada");
         }
     }
 
