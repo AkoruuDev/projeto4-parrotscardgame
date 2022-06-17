@@ -56,9 +56,8 @@ function flip(elemento) {
     contarTentativas();
 }
 
-let tentativas = 0;
+let tentaas = 0;
 
 function contarTentativas() {
     tentativas = tentativas + 1;
-    alert(tentativas);
 }
