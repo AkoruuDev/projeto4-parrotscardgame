@@ -1,7 +1,7 @@
 let stop = 'continua';
 let qtdCartas;
 while (stop != 'Stop') {
-    qtdCartas = prompt("Com quantas cartas quer jogar? (de 4 à 14)");
+    qtdCartas = prompt("Com quantas cartas quer jogar? (pares de 4 à 14)");
 
     if (qtdCartas != 4 && qtdCartas != 6 && qtdCartas != 8 && qtdCartas != 10 && qtdCartas != 12 && qtdCartas != 14) {
         stop = 'continua';
@@ -52,6 +52,16 @@ for (let index = 0; index < qtdCartas; index++) {
 
 function flip(elemento) {
     elemento.classList.add("flip");
+
+    let cardVirado = document.querySelectorAll(".par").length;
+    let cardflipado = document.querySelector(".flip");
+    if (cardVirado == 0) {
+        if (cardVirado != elemento) {
+            cardflipado.classList.remove(".flip");
+        } else {
+            elemento.classList.add("par");
+        }
+    }
 
     contarTentativas();
     conferirJogo();
