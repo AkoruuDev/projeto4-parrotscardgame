@@ -52,4 +52,13 @@ for (let index = 0; index < qtdCartas; index++) {
 
 function flip(elemento) {
     elemento.classList.toggle("flip");
+
+    contarTentativas();
+}
+
+let tentativas = 0;
+
+function contarTentativas() {
+    tentativas = tentativas + 1;
+    alert(tentativas);
 }
