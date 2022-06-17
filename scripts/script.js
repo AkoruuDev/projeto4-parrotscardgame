@@ -10,6 +10,32 @@ while (stop != 'Stop') {
     }
 }
 
+const todasAsCartas = [
+    'bobrossparrot.gif',
+    'explodyparrot.gif',
+    'fiestaparrot.gif',
+    'metalparrot.gif',
+    'revertitparrot.gif',
+    'tripletsparrot.gif',
+    'unicornparrot.gif',
+]
+
+let backCards = [];
+
+for (let index = 0; index < (qtdCartas/2); index++) {
+    backCards.push(todasAsCartas[index]);
+}
+
+for (let index = 0; index < (qtdCartas/2); index++) {
+    backCards.push(backCards[index]);
+}
+
+backCards.sort(comparador);
+
+function comparador() { 
+	return Math.random() - 0.5; 
+}
+
 for (let index = 0; index < qtdCartas; index++) {
     const cartas = `
         <div class="card" onclick="flip(this)" data-identifier="card">
@@ -17,7 +43,7 @@ for (let index = 0; index < qtdCartas; index++) {
                 <img src="./images/front.png" class="parrot">
             </div>
             <div class="face back" data-identifier="back-face">
-                <img src="./images/metalparrot.gif">
+                <img src="./images/${backCards[index]}">
             </div>
         </div>
     `;
