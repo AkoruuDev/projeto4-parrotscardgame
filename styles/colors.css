@@ -14,3 +14,7 @@
     --altura: var(--largura)*1.25px;
     --teste: 10;
 }
+
+:root { /*  hover   */
+    --hover-card: #79e786;
+}

@@ -21,56 +21,79 @@ body {
     align-items: center;
 }
 
-.container {
-    width: 100%;
-    height: 100%;
-    padding: 25px;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .top {
     padding: 40px;
     font-size: 56px;
     color: var(--title);
+    text-align: center;
+}
+
+.mesaDeJogos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 47px;
+    width: 85%;
+    height: 75%;
 }
 
 .card {
-    display: flex;
-    justify-content: center;
+    width: 128px;
+    height: 160px;
 
-    position: relative;
-    transform-style: preserve-3d;
-    transition: all 0.8s;
-}
-
-.face{
-    width: 117px;
-    height: 146px;
-    padding: 12px;
-    margin: 25px;
-
+    border-radius: 5px;
+    margin-right: 31px;
+    margin-bottom: 31px;
     background-color: var(--card);
     border: var(--card-border) solid 0.5px;
     border-radius: 5px;
 
     display: flex;
     justify-content: center;
+
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.8s;
+    transition: background-color 0.2s;
+}
+
+.card:hover {
+    background-color: var(--hover-card);
+}
+
+.face{
+    width: 90%;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
     align-items: center;
 
-    transform: rotateY(180deg);
+    backface-visibility: hidden;
     position: absolute;
 }
 
 .back {
-    backface-visibility: hidden;
+    transform: rotateY(180deg);
 }
 
 .flip {
     transform: rotateY(180deg);
+}
+
+.flip:hover {
+    background-color: var(--card);
 }
 
 img {
@@ -105,7 +128,24 @@ img {
     font-size: 30px;
     color: var(--title);
 }
+  
+@media (max-width: 1270px) {
+    .top h1 {
+        font-size: 100%;
+        max-width: 100%;
+    }
 
-.display {
-    display: none;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+        margin-top: 15px;
+    }
+
+    .card {
+        width: 117px;
+        height: 146px;
+    }
 }
