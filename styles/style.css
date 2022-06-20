@@ -65,7 +65,6 @@ body {
     position: relative;
     transform-style: preserve-3d;
     transition: all 0.8s;
-    transition: background-color 0.2s;
 }
 
 .card:hover {
