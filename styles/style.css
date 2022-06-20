@@ -106,6 +106,6 @@ img {
     color: var(--title);
 }
 
-.virada {
-    color: azure;
+.display {
+    display: none;
 }
