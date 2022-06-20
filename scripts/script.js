@@ -1,12 +1,16 @@
 let stop = 'continua';
 let qtdCartas;
-while (stop != 'Stop') {
-    qtdCartas = prompt("Com quantas cartas quer jogar? (pares de 4 à 14)");
+function escolherCartas() {
+    while (stop != 'Stop') {
+        qtdCartas = prompt("Com quantas cartas quer jogar? (pares de 4 à 14)");
 
-    if (qtdCartas % 2 == 0 && qtdCartas < 15 && qtdCartas > 3)  {
-        stop = 'Stop';
+        if (qtdCartas % 2 == 0 && qtdCartas < 15 && qtdCartas > 3)  {
+            stop = 'Stop';
+        }
     }
 }
+
+escolherCartas();
 
 const todasAsCartas = [
     'bobrossparrot.gif',
@@ -91,5 +95,11 @@ function conferirJogo() {
     const cartasNaMesa = document.querySelectorAll(".flip").length;
     if (cartasNaMesa == qtdCartas) {
         alert(`Parabéns! Você finalizou o jogo com ${tentativas} tentativas!`);
+        let rejogar = prompt("Quer jogar de novo? (y/n)");
+        if (rejogar == 'y') {
+            escolherCartas();
+        } else {
+            alert("Obrigado por Jogar! :D")
+        }
     }
 }
