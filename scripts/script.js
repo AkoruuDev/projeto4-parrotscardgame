@@ -97,7 +97,7 @@ function conferirJogo() {
         alert(`Parabéns! Você finalizou o jogo com ${tentativas} tentativas!`);
         let rejogar = prompt("Quer jogar de novo? (y/n)");
         if (rejogar == 'y') {
-            escolherCartas();
+            window.location.reload();
         } else {
             alert("Obrigado por Jogar! :D")
         }
